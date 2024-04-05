@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js" defer></script>
     <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-    
+    <div class="sidebar">
+        <div class="logo-banner">
+            <img src="odin-lined.png" alt="Odin Project logo">
+            <p>ODIN</p>
+        </div>
+        <div class="credit">
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header-message">
+            <h2>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                Sign up <em>now</em> to get started.<br>
+                <br>
+                You <em>know</em> you want to.
+            </h2>
+        </div>
+        <form action="" id="user-info-form">
+            <div class="form-header">
+                <h2>Let's do this!</h2>
+            </div>
+            <div>
+                <fieldset>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" required>
+                        <span id="pass-error"></span>
+                    </div>
+                    <div>
+                        <label for="pass-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="pass-confirm" required>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+        <div>
+            <button type="submit" form="user-info-form">Create Account</button>
+        </div>
+        <p>Already have an account? <a href="https://google.com">Log in</a></p>
+    </div>
 </body>
 </html>
